@@ -1,0 +1,13 @@
+lightbox gallery
+
+1.) Go to  https://cdnjs.com/libraries/ekko-lightbox
+2 .) Download version 4.0.0. - put min.css in the header and min.js in the end of body tag.
+3.) put this javascript code in script tags in the botom of body tag:
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+4.) Wrap picture tag in <a> tag and add data-toggle="lightbox" in <a> tag kot na primer:
+	<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+            <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+         </a>

@@ -1,0 +1,19 @@
+Embed color picker in bootstrap3 
+https://codepremix.com/jquery-color-picker-using-bootstrap-3
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.css" rel="stylesheet">
+
+<div id="cp-component" class="input-group">
+  <input type="text" value="#269faf" class="form-control">
+  <span class="input-group-addon"><i></i></span>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/js/bootstrap-colorpicker.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    $('#cp-component').colorpicker();
+  });
+</script>
